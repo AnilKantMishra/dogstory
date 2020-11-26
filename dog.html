@@ -1,0 +1,92 @@
+<!Doctype html>
+<head>
+
+</head>
+    <body style="   background-image: url('dog.gif');background-position: center; background-attachment: fixed; background-size: 100% 100%; ">
+    <center>
+
+<style>
+
+html,body{
+    overflow-x: hidden;
+    padding: 0px;
+}
+
+
+</style>
+
+
+
+     <p style="font: small-caption; box-sizing: border-box; font-size: 21px ; margin-left: 20px; margin-right: 20px; margin-top: 30px; font-family: 'Times New Roman', Times, serif; font-style: italic;">    If your dog was a human, how old would he be?<br>
+            Ever wonder how old your dog is in human years?  so Here we go use this program to calculate your dog's "human" age.  </p>
+            </p>
+        </div>
+        <fieldset style="width: 520px; height: 320px; border-radius: 25px; text-align: center; margin-top: 50px;" >
+
+            <legend style="font-size: 25px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font: large; text-align: center; "> Calculate Age Here </legend>
+    <form>
+
+     Age   <input style="width: 290px; height: 20px;  margin-top: 25px; font-size: 17px;" id="age" placeholder="Enter Age Here"/>
+
+            <br>
+
+    <button type="button" id="bt1" onclick="fn1()" style="  font-size: 20px; border-radius: 10px; margin-top: 20px; margin-bottom: 20px; background-color: #0396af;"> Calculate </button><br>
+    
+  In year <input  id="result" style="margin-top: 20px; margin-bottom: 30px; width: 250px;"/>  <br>
+  In Days  <input  id="dayresult" style="width: 250px; margin-bottom: 30px;" /><br>
+ Total Number of Months  <input  id="mresult"margin-top: 20px; margin-bottom: 30px; style="width: 250px;" /><br>
+
+
+
+</form>
+</fieldset>
+
+    </center>
+    </body>
+
+
+
+<script>
+
+
+
+
+
+function fn1()
+
+{
+ 
+    var age = document.getElementById('age').value;
+
+  var  a = Number(age-21);
+   var b = Number(a/4);
+   var c = Number(b+2);
+
+
+    var day =Number(c*365);
+    var month = Number(c*12);
+        
+
+    if(age>0 && age<21)
+    {
+
+       var r = age/10.5;
+        document.getElementById('result').value = r;
+
+    }
+    else
+    
+    document.getElementById('result').value = c;
+
+    document.getElementById('dayresult').value = day;
+    document.getElementById('mresult').value = month;
+
+    
+    
+
+}
+
+
+
+</script>
+</html>
